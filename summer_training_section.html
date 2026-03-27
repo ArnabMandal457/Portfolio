@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Summer Training – Arnab Mandal</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600&display=swap');
+
+  :root {
+    --bg: #050a0f;
+    --surface: #0a1520;
+    --border: #00ffe7;
+    --accent: #00ffe7;
+    --accent2: #ff006e;
+    --accent3: #a259ff;
+    --text: #c8e6f0;
+    --muted: #4a7080;
+    --glow: 0 0 12px rgba(0,255,231,0.4);
+    --glow2: 0 0 12px rgba(255,0,110,0.4);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Rajdhani', sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(0,255,231,0.02) 40px, rgba(0,255,231,0.02) 41px),
+      repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(0,255,231,0.02) 40px, rgba(0,255,231,0.02) 41px);
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .header {
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .header::before {
+    content: '// TRAINING_LOG.exe';
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .header h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: clamp(22px, 5vw, 36px);
+    font-weight: 900;
+    color: #fff;
+    text-shadow: var(--glow);
+    letter-spacing: 2px;
+    line-height: 1.1;
+  }
+
+  .header h1 span { color: var(--accent); }
+
+  .header .meta {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--muted);
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .header .meta span::before { content: '▸ '; color: var(--accent); }
+
+  /* Overview card */
+  .overview {
+    background: var(--surface);
+    border: 1px solid rgba(0,255,231,0.2);
+    border-top: 2px solid var(--accent);
+    padding: 24px 28px;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overview::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle at top right, rgba(0,255,231,0.06), transparent 70%);
+    pointer-events: none;
+  }
+
+  .overview p {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--text);
+    font-weight: 300;
+  }
+
+  .overview p strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* Section label */
+  .section-label {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--accent2);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255,0,110,0.4), transparent);
+  }
+
+  /* Tech grid */
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .tech-card {
+    background: var(--surface);
+    border: 1px solid rgba(0,255,231,0.12);
+    padding: 18px 20px;
+    position: relative;
+    transition: border-color 0.2s, transform 0.2s;
+    cursor: default;
+  }
+
+  .tech-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: var(--glow);
+  }
+
+  .tech-card .cat {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 2px;
+    color: var(--accent2);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .tech-card h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+
+  .tech-card p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #7aa0b0;
+    font-weight: 300;
+  }
+
+  .tech-card .icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 20px;
+    opacity: 0.4;
+  }
+
+  /* Skills tags */
+  .skills-wrap {
+    margin-bottom: 32px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .tag {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 11px;
+    padding: 5px 12px;
+    border: 1px solid;
+    letter-spacing: 1px;
+    transition: background 0.2s;
+  }
+
+  .tag.cyan  { border-color: var(--accent);  color: var(--accent);  }
+  .tag.pink  { border-color: var(--accent2); color: var(--accent2); }
+  .tag.purple{ border-color: var(--accent3); color: var(--accent3); }
+
+  .tag:hover { background: rgba(0,255,231,0.08); }
+
+  /* Highlight bar */
+  .highlight {
+    border: 1px solid rgba(162,89,255,0.3);
+    border-left: 3px solid var(--accent3);
+    background: rgba(162,89,255,0.05);
+    padding: 18px 22px;
+    margin-bottom: 32px;
+  }
+
+  .highlight p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text);
+  }
+
+  .highlight p em {
+    color: var(--accent3);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* Footer stamp */
+  .stamp {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    border-top: 1px solid rgba(0,255,231,0.1);
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .status-dot {
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: #00ff88;
+    border-radius: 50%;
+    margin-right: 6px;
+    box-shadow: 0 0 6px #00ff88;
+    animation: blink 1.5s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>Summer Training<br><span>Cyber Security Fundamentals</span></h1>
+    <div class="meta">
+      <span>6 Weeks | 2025</span>
+      <span>Offensive &amp; Defensive Security</span>
+      <span>Hands-On Lab Environment</span>
+    </div>
+  </div>
+
+  <div class="overview">
+    <p>
+      Completed an intensive <strong>6-week summer training</strong> in Cybersecurity, covering the full spectrum from foundational networking and OS security to real-world exploitation and incident analysis. The program combined lecture-based learning with hands-on lab sessions — deploying tools like <strong>Metasploit, Wireshark, Nmap, and Burp Suite</strong> in simulated attack environments, analyzing live packet captures, and building a vulnerable network lab from scratch. Culminated with a deep-dive into a real-world breach case study and guidance on professional certification pathways.
+    </p>
+  </div>
+
+  <div class="section-label">Core Technology Areas</div>
+
+  <div class="tech-grid">
+
+    <div class="tech-card">
+      <div class="cat">Network Security</div>
+      <h3>Nmap &amp; Wireshark</h3>
+      <p>Network discovery, port scanning, and live traffic capture and analysis to detect anomalies and map attack surfaces.</p>
+      <div class="icon">🔭</div>
+    </div>
+
+    <div class="tech-card">
+      <div class="cat">Exploitation</div>
+      <h3>Metasploit Framework</h3>
+      <p>Exploiting OS, database, and network service vulnerabilities on Metasploitable in a controlled lab environment.</p>
+      <div class="icon">⚡</div>
+    </div>
+
+    <div class="tech-card">
+      <div class="cat">Credential Testing</div>
+      <h3>John the Ripper &amp; Hydra</h3>
+      <p>Brute-force and dictionary-based password cracking techniques for penetration testing and recovery scenarios.</p>
+      <div class="icon">🔑</div>
+    </div>
+
+    <div class="tech-card">
+      <div class="cat">Vulnerability Assessment</div>
+      <h3>OpenVAS / Nessus</h3>
+      <p>Automated scanning to identify and prioritize vulnerabilities across networked systems and services.</p>
+      <div class="icon">🛡️</div>
+    </div>
+
+    <div class="tech-card">
+      <div class="cat">Web App Security</div>
+      <h3>SQL Injection &amp; Manual Testing</h3>
+      <p>Manual and tool-assisted SQL injection techniques to identify and exploit insecure database-backed applications.</p>
+      <div class="icon">💉</div>
+    </div>
+
+    <div class="tech-card">
+      <div class="cat">Network Simulation</div>
+      <h3>Cisco Packet Tracer</h3>
+      <p>Designed and simulated LAN/WAN topologies with routers, switches, firewalls, and IDS/IPS configurations.</p>
+      <div class="icon">🌐</div>
+    </div>
+
+    <div class="tech-card">
+      <div class="cat">OS &amp; CLI</div>
+      <h3>Linux Administration</h3>
+      <p>File system navigation, user management, permissions, and CLI-based security administration in Kali/Ubuntu.</p>
+      <div class="icon">🐧</div>
+    </div>
+
+    <div class="tech-card">
+      <div class="cat">GUI Hacking Tools</div>
+      <h3>SET, Armitage &amp; Zenmap</h3>
+      <p>Social engineering simulation, visual attack orchestration, and graphical network mapping for recon workflows.</p>
+      <div class="icon">🎯</div>
+    </div>
+
+    <div class="tech-card">
+      <div class="cat">Threat Analysis</div>
+      <h3>WannaCry / Target Breach</h3>
+      <p>In-depth case study analysis of real-world cyberattacks — attack vectors, propagation, impact, and defensive takeaways.</p>
+      <div class="icon">🔬</div>
+    </div>
+
+  </div>
+
+  <div class="section-label">Skills Acquired</div>
+
+  <div class="skills-wrap">
+    <div class="tags">
+      <span class="tag cyan">Penetration Testing</span>
+      <span class="tag cyan">Packet Analysis</span>
+      <span class="tag cyan">Vulnerability Scanning</span>
+      <span class="tag pink">SQL Injection</span>
+      <span class="tag pink">Password Cracking</span>
+      <span class="tag pink">Exploitation</span>
+      <span class="tag purple">Linux CLI</span>
+      <span class="tag purple">Network Design</span>
+      <span class="tag purple">Threat Modeling</span>
+      <span class="tag cyan">Malware Analysis</span>
+      <span class="tag pink">MITM Attacks</span>
+      <span class="tag purple">VM Lab Setup</span>
+      <span class="tag cyan">TCP/IP &amp; OSI</span>
+      <span class="tag pink">Subnetting</span>
+    </div>
+  </div>
+
+  <div class="highlight">
+    <p>
+      Capstone project: <em>PookiePrank</em> — a Python + Netcat-based <em>reverse shell simulator</em> built to demonstrate real social engineering and backdoor attack vectors in a controlled, educational setting. The tool silently deploys a netcat listener via a batch payload, establishes a reverse shell over a local network, and hands the attacker a live command session — wrapped in a disarming UI to simulate how trust exploitation actually works. Covers Nmap-based target discovery (CIDR scanning), reverse shell mechanics, payload delivery, and post-connection command execution. Built for <em>cybersecurity awareness training</em> — making attack vectors impossible to ignore by making them personal.
+    </p>
+  </div>
+
+  <div class="stamp">
+    <span><span class="status-dot"></span>COMPLETED · SUMMER 2025</span>
+    <span>NEXT: CompTIA Security+ Certification</span>
+  </div>
+
+</div>
+</body>
+</html>

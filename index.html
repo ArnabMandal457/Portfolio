@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk | Security Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;500;700&family=VT323&display=swap"
+        rel="stylesheet">
+    <!-- Devicons for language/tool logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="scanline"></div>
+
+    <!-- Animated Ripple Background -->
+    <div class="bg-ripples" aria-hidden="true">
+        <div class="ripple ripple-1"></div>
+        <div class="ripple ripple-2"></div>
+        <div class="ripple ripple-3"></div>
+        <div class="ripple ripple-4"></div>
+        <div class="ripple ripple-5"></div>
+        <!-- Additional Desktop Ripples -->
+        <div class="ripple ripple-6"></div>
+        <div class="ripple ripple-7"></div>
+        <div class="ripple ripple-8"></div>
+        <div class="ripple ripple-9"></div>
+        <div class="ripple ripple-10"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo" data-text="ARNAB_MANDAL" style="padding-left: 10px;">ARNAB_MANDAL</div>
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul>
+                <li><a href="#hero" data-text="/// HOME">/// HOME</a></li>
+                <li><a href="#about" data-text="/// ABOUT">/// ABOUT</a></li>
+                <li><a href="#skills" data-text="/// SKILLS">/// SKILLS</a></li>
+                <li><a href="#projects" data-text="/// PROJECTS">/// PROJECTS</a></li>
+                <li><a href="#training" data-text="/// TRAINING">/// TRAINING</a></li>
+                <li><a href="#certifications" data-text="/// CERTS">/// CERTS</a></li>
+                <li><a href="#achievements" data-text="/// ACHIEVE">/// ACHIEVE</a></li>
+                <li><a href="#activities" data-text="/// EXTRA">/// EXTRA</a></li>
+                <li><a href="#education" data-text="/// EDU">/// EDU</a></li>
+                <li><a href="#contact" data-text="/// CONTACT">/// CONTACT</a></li>
+                <div class="nav-indicator"></div>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="devicon-chrome-plain"></i>
+                </button>
+                <a href="Arnab.pdf" download class="btn-download-cv"
+                    data-text="DOWNLOAD_CV"><span>DOWNLOAD_CV</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ===== 1. HERO ===== -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="special" data-text="ARNAB MANDAL"><span>ARNAB MANDAL</span></h1>
+                <p class="hero-role" data-text="CYBERSECURITY_ENGINEER | SOFTWARE_ENGINEER">
+                    <span>CYBERSECURITY ENGINEER | SOFTWARE ENGINEER</span>
+                </p>
+                <p class="subtitle">System Secure. <span class="typing-effect">Initiating Protocol...</span></p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary special" data-text="VIEW_LOGS"><span>VIEW_LOGS</span></a>
+                    <a href="#contact" class="btn secondary special"
+                        data-text="ESTABLISH_UPLINK"><span>ESTABLISH_UPLINK</span></a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hologram-container">
+                    <div class="hack-terminal">
+                        <div class="hack-header">TARGET: CORPORATE_GRID_09</div>
+                        <div class="hack-body">
+                            <div class="code-log"></div>
+                        </div>
+                        <div class="breach-alert hidden special">
+                            <div class="skull-icon">☠</div>
+                            <h1>SYSTEM BREACHED</h1>
+                            <p>ACCESS: ROOT_GRANTED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ===== 2. ABOUT ME ===== -->
+        <section id="about">
+            <h2 class="section-title layers" data-text="01_ABOUT_ME"><span>01_ABOUT_ME</span></h2>
+            <div class="about-container">
+                <div class="profile-photo">
+                    <img src="20260108_102914.jpg" alt="Profile Photo">
+                    <div class="photo-overlay"></div>
+                </div>
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="title special">user@cyberdeck:~</span>
+                    </div>
+                    <div class="terminal-body" id="about-terminal">
+                        <p class="terminal-line command-line"><span class="prompt">$</span> <span
+                                class="cmd-text">whoami</span></p>
+                        <p class="terminal-line response">Passionate Cybersecurity Engineer with a knack for ethical
+                            hacking and
+                            network
+                            defense. I build secure systems and break insecure ones.</p>
+                        <p class="terminal-line command-line"><span class="prompt">$</span> <span class="cmd-text">cat
+                                about.txt</span></p>
+                        <p class="terminal-line response">
+                            Hey there — I'm a Security Engineer who lives at the intersection of offense and
+                            defense.<br>
+                            I studied Computer Science and dove headfirst into the world of ethical hacking, network
+                            forensics, and malware analysis. I write Python scripts at 2 AM, break CTF challenges
+                            for fun, and genuinely believe that understanding how systems break is the only real
+                            way to secure them.<br>
+                            When I'm not poking around in networks, I'm building tools that make security
+                            accessible — and occasionally terrifying — for everyone.
+                        </p>
+                        <p class="terminal-line command-line"><span class="prompt">$</span> <span
+                                class="cmd-text">location</span></p>
+                        <p class="terminal-line response">India (Remote)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 3. SKILLS ===== -->
+        <section id="skills">
+            <h2 class="section-title layers" data-text="02_SKILLSET"><span>02_SKILLSET</span></h2>
+            <div class="skills-wrapper">
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><span class="neon-bracket">[</span> PROGRAMMING_LANGUAGES <span
+                            class="neon-bracket">]</span></h3>
+                    <div class="lang-grid">
+                        <div class="lang-card has-tooltip" tabindex="0">
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                                class="tool-svg" alt="Python" />
+
+                            <span>Python</span>
+                            <div class="tool-tooltip">High-level scripting language used extensively for automation,
+                                exploitation, and building security tools.</div>
+                        </div>
+                        <div class="lang-card has-tooltip" tabindex="0">
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+                                class="tool-svg" alt="C" />
+
+                            <span>C</span>
+                            <div class="tool-tooltip">Low-level systems programming language essential for memory
+                                corruption exploits and system internals.</div>
+                        </div>
+                        <div class="lang-card has-tooltip" tabindex="0">
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                                class="tool-svg" alt="C++" />
+
+                            <span>C++</span>
+                            <div class="tool-tooltip">Object-oriented extension of C used for writing high-performance
+                                native applications and malware.</div>
+                        </div>
+                        <div class="lang-card has-tooltip" tabindex="0">
+
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                                class="tool-svg" alt="Java" />
+
+                            <span>Java</span>
+                            <div class="tool-tooltip">Platform-independent, object-oriented language commonly used in
+                                enterprise environments.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><span class="neon-bracket">[</span> TOOLS &amp; WEAPONS <span
+                            class="neon-bracket">]</span></h3>
+                    <div class="lang-grid">
+                        <div class="lang-card has-tooltip" tabindex="0">
+                            <img src="https://img.icons8.com/color/512/nmap.png"
+                                alt="Nmap" class="tool-svg">
+                            <span>Nmap</span>
+                            <div class="tool-tooltip">Network discovery and security auditing tool used for mapping
+                                networks and finding vulnerabilities.</div>
+                        </div>
+                        <div class="lang-card has-tooltip" tabindex="0">
+                            <img src="https://www.kali.org/tools/netcat/images/netcat-logo.svg"
+                                alt="Netcat" class="tool-svg">
+                            <span>Netcat</span>
+                            <div class="tool-tooltip">Versatile networking utility used to read from and write to
+                                network connections.</div>
+                        </div>
+                        <div class="lang-card has-tooltip" tabindex="0">
+                            <img src="https://www.wireshark.org/_astro/wireshark-logo-big.CkRjSOaC_vkreH.png"
+                                alt="Wireshark" class="tool-svg">
+                            <span>Wireshark</span>
+                            <div class="tool-tooltip">Network protocol analyzer used to capture and analyze network
+                                traffic.</div>
+                        </div>
+                        <div class="lang-card has-tooltip" tabindex="0">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK29qVSVb2A-I-0nAR8PI4LEcPP_OO73bPVQ&s"
+                                alt="John The Ripper" class="tool-svg">
+                            <span style="text-align: center;">John The Ripper</span>
+                            <div class="tool-tooltip">Password cracking tool used to recover lost or forgotten
+                                passwords.</div>
+                        </div>
+                        <div class="lang-card has-tooltip" tabindex="0">
+                            <img src="https://cisco-packet-tracer.fileion.com/curator/software/logos/2025/06/cisco-packet-tracer.png?w=90&s=da03bc806681449db18469b7edf5c4d8"
+                                alt="Cisco Packet Tracer" class="tool-svg">
+                            <span style="text-align: center;">Cisco Packet Tracer</span>
+                            <div class="tool-tooltip">Network simulation tool used to design and simulate computer
+                                networks.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skill-category">
+                    <h3 class="skill-cat-title"><span class="neon-bracket">[</span> OPERATING_SYSTEMS <span
+                            class="neon-bracket">]</span></h3>
+                    <div class="lang-grid">
+                        <div class="lang-card has-tooltip" tabindex="0">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg"
+                                alt="Windows" class="tool-svg">
+                            <span>Windows</span>
+                            <div class="tool-tooltip">Deep understanding of Windows Internals, Active Directory
+                                exploitation, and endpoint security.</div>
+                        </div>
+                        <div class="lang-card has-tooltip" tabindex="0">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg"
+                                alt="Linux" class="tool-svg">
+                            <span>Linux</span>
+                            <div class="tool-tooltip">Mastery of Linux command line, kernel architecture, bash
+                                scripting, and server hardening.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== 4. PROJECTS ===== -->
+        <section id="projects">
+            <h2 class="section-title layers" data-text="03_PROJECTS"><span>03_PROJECTS</span></h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="card-border"></div>
+                    <div class="project-tag special">PYTHON // MySQL</div>
+                    <h3>BANKING_SYSTEM</h3>
+                    <p>A full-featured console-based banking application with secure account management, transaction
+                        logging, and PIN-protected authentication flows.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ArnabMandal457/Banking-System" class="btn-small special"
+                            target="_blank">ACCESS_REPO</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-border"></div>
+                    <div class="project-tag special">PYTHON // CYBERSEC// NETCAT</div>
+                    <h3>POOKIE_PRANK</h3>
+                    <p>A cute but terrifying cybersecurity awareness tool. Demonstrates real attack vectors in a
+                        controlled,
+                        educational environment — making security awareness impossible to ignore.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/ArnabMandal457/PookiePrank-A-Cute-but-Terrifying-Cybersecurity-Awareness-Tool"
+                            class="btn-small special" target="_blank">ACCESS_REPO</a>
+                    </div>
+                </div>
+                <!-- <div class="project-card">
+                    <div class="card-border"></div>
+                    <div class="project-tag special">PYTHON // CYBERSEC</div>
+                    <h3>ACTIVITY_MONITOR_TOOL</h3>
+                    <p>Details coming soon...</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-small special">ACCESS_REPO</a>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- ===== 5. TRAINING ===== -->
+        <section id="training">
+            <h2 class="section-title layers" data-text="04_TRAINING"><span>04_TRAINING</span></h2>
+            <div class="achievement-grid">
+                <div class="achievement-card cert-link">
+                    <div class="achievement-num">01</div>
+                    <div class="achievement-body">
+                        <h3 class="special">SUMMER_TRAINING: CYBERSECURITY_ESSENTIALS</h3>
+                        <!-- <p class="achievement-desc special">Details coming soon...</p> -->
+                        <a href="summer_training_section.html" class="btn-small special"
+                            style="margin-right: 20px;">More Details</a>
+                        <a href="https://drive.google.com/file/d/1HPZ6RrrzecqjxawkknkvzofnvSQydQ_y/view?usp=sharing"
+                            class="btn-small special" target="_blank">Credentials</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 6. CERTIFICATIONS ===== -->
+        <section id="certifications">
+            <h2 class="section-title layers" data-text="05_CERTIFICATIONS"><span>05_CERTIFICATIONS</span></h2>
+            <div class="achievement-grid">
+                <div class="achievement-card cert-link">
+                    <div class="achievement-num">01</div>
+                    <div class="achievement-body">
+                        <h3 class="special">INTRODUCTION TO CYBERSECURITY</h3>
+                        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                            <p class="achievement-desc special">Offered by Cisco Networking Academy</p>
+                            <span style="color: var(--neon-cyan); opacity: 0.4;">|</span>
+                            <p class="achievement-desc special">Completed on Sept 2025</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/1pqYxoHlxDRGFQl7C3VA4Hr8U2U6a4G7_/view?usp=sharing"
+                            class="btn-small special" target="_blank">Credentials</a>
+                    </div>
+                </div>
+                <div class="achievement-card cert-link">
+                    <div class="achievement-num">02</div>
+                    <div class="achievement-body">
+                        <h3 class="special">SOCIAL NETWORKS</h3>
+                        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                            <p class="achievement-desc special">Offered by IIT Madras on NPTEL</p>
+                            <span style="color: var(--neon-cyan); opacity: 0.4;">|</span>
+                            <p class="achievement-desc special">Completed on Apr 2025</p>
+                        </div>
+                        <a href="https://drive.google.com/file/d/10zswFv7ko0Ja-vdSIuXYclwX9l2nUbRA/view?usp=sharing"
+                            class="btn-small special" target="_blank">Credentials</a>
+                    </div>
+                </div>
+                <div class="achievement-card cert-link">
+                    <div class="achievement-num">03</div>
+                    <div class="achievement-body">
+                        <h3 class="special">BITS AND BYTES OF COMPUTER NETWORKS</h3>
+                        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+                            <p class="achievement-desc special">Offered by Google on Coursera</p>
+                            <span style="color: var(--neon-cyan); opacity: 0.4;">|</span>
+                            <p class="achievement-desc special">Completed on Sept 2024</p>
+                        </div>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/6CRQ1WHXRA3P"
+                            class="btn-small special" target="_blank">Credentials</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 7. ACHIEVEMENTS ===== -->
+        <section id="achievements">
+            <h2 class="section-title layers" data-text="06_ACHIEVEMENTS"><span>06_ACHIEVEMENTS</span></h2>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-num">01</div>
+                    <div class="achievement-body">
+                        <h3 class="special">Solved 70+ problems on GeeksForGeeks with Coding Score of 180+</h3>
+                        <!-- <p class="achievement-desc special">Details coming soon...</p> -->
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-num">02</div>
+                    <div class="achievement-body">
+                        <h3 class="special">Earned a 4-star badge for Python programming language on Hackerrank </h3>
+                        <!-- <p class="achievement-desc special">Details coming soon...</p> -->
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-num">03</div>
+                    <div class="achievement-body">
+                        <h3 class="special">Solved 100+ LeetCode Problems. </h3>
+                        <!-- <p class="achievement-desc special">Details coming soon...</p> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 8. EXTRA / CO-CURRICULAR ===== -->
+        <section id="activities">
+            <h2 class="section-title layers" data-text="07_ACTIVITIES"><span>07_ACTIVITIES</span></h2>
+            <div class="achievement-grid">
+                <div class="achievement-card">
+                    <div class="achievement-num">01</div>
+                    <div class="achievement-body">
+                        <h3 class="special">Amazon AWS SCD 2025</h3>
+                        <p class="achievement-desc special">Jalandhar, LPU, 2025</p>
+                        <a href="https://drive.google.com/file/d/1r2QZ4DNjJdkxs_JmjIEd74ELY4TaOPLm/view?usp=sharing"
+                            class="btn-small special" target="_blank">Credentials</a>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-num">02</div>
+                    <div class="achievement-body">
+                        <h3 class="special">Code-A-Hunt: A 24 Hour Hackathon</h3>
+                        <p class="achievement-desc special">Jalandhar, LPU, 2024</p>
+                        <a href="https://drive.google.com/file/d/1kUv1N7n52TBKfH982Mjbhgd_67vuICWH/view?usp=sharing"
+                            class="btn-small special" target="_blank">Credentials</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 9. EDUCATION ===== -->
+        <section id="education">
+            <h2 class="section-title layers" data-text="08_EDUCATION"><span>08_EDUCATION</span></h2>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>CLASS_10</h3>
+                        <p class="date">2020 - 2021</p>
+                        <p class="school special">Kendriya_Vidyalaya Ranaghat</p>
+                        <!-- <p class="grade">Percentage: 85%</p> -->
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>CLASS_12</h3>
+                        <p class="date">2022 - 2023</p>
+                        <p class="school special">Kendriya_Vidyalaya Ranaghat</p>
+                        <p class="grade">Science</p>
+                        <!-- <p class="grade">Percentage: 68%</p> -->
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>GRADUATION</h3>
+                        <p class="date">2023 - present</p>
+                        <p class="school">Lovely Professional University</p>
+                        <p class="grade">B.Tech (CSE)</p>
+                        <p class="grade">CGPA: 8.42</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== 10. CONTACT ===== -->
+        <section id="contact">
+            <h2 class="section-title layers" data-text="09_CONTACT"><span>09_CONTACT</span></h2>
+            <div class="contact-wrapper">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">CODENAME:</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">FREQ_CHANNEL:</label>
+                        <input type="email" id="email" required placeholder="john_doe@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">TRANSMISSION:</label>
+                        <textarea id="message" rows="5" required placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn primary" data-text="SEND_DATA"><span>SEND_DATA</span></button>
+                </form>
+
+                <footer>
+                    <div class="footer-content">
+                        <h3 class="social-title special">CONNECT_WITH_ME</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/arnab-mandal-398217292/" target="_blank"
+                                aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/ArnabMandal457" target="_blank" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="https://instagram.com/your-profile" target="_blank" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.20 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="footer-copy special">EST. 2077 // SECURE CONNECTION</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Skill Details Modal -->
+    <div id="skill-modal" class="skill-modal-overlay">
+        <div class="skill-modal-content">
+            <button class="skill-modal-close" data-text="X"><span>X</span></button>
+            <div class="skill-modal-logo"></div>
+            <h3 class="skill-modal-title layers" data-text=""><span></span></h3>
+            <p class="skill-modal-desc"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

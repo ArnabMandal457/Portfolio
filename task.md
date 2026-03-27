@@ -1,0 +1,62 @@
+# Tasks
+
+- [x] Project Setup
+    - [x] Create `CyberpunkPortfolio` directory
+    - [x] Move artifacts to folder
+    - [x] Initialize `index.html`, `style.css`, `script.js`
+- [x] Design Implementation (Cyberpunk 2077 Theme)
+    - [x] Setup Color Palette (Neon Yellow, Black, Cyan, Magenta)
+    - [x] Refine Typography (Orbitron, Rajdhani, VT323)
+    - [x] ~~Implement Custom Font (Cyberpunk.ttf)~~ (Reverted)
+    - [x] Implement Global Styles & Background (Grid/Cyber textures)
+    - [x] Create Hero Section (Glitch text, Hacker vibes)
+    - [x] Create About Me Section (Terminal style)
+    - [x] **Create Education Section (Horizontal Timeline)**
+    - [x] **Animate Education Timeline (Progressive Scroll + Pop-up)**
+    - [x] **Add Glitch Effect to Buttons on Hover**
+    - [x] Create Skills Section (Progress bars/Holo-tech style)
+    - [x] Create Projects Section (Card layout with neon borders)
+    - [x] Create Contact Section
+- [x] Interactivity & Animations
+    - [x] Add Glitch Effects to titles
+    - [x] Implement Global "Deciphering" Animation for all text
+    - [x] ~~Refine Animation (Speed)~~ (Reverted to Default)
+    - [x] ~~Add Animation Delay~~ (Removed)
+    - [x] Extend Animation to Titles, Nav, and Glitch Effects
+    - [x] **Add Multi-language Support to Decipher Animation (Asian, Cyrillic, etc.)**
+    - [x] **Add Sliding Nav Indicator (Dynamic Red Bar)**
+    - [x] **Add Tubelight/Ghost Glitch to Nav Indicator on Move**
+    - [x] **Refine Glitch with Translucent Red Pixelburn Trail**
+    - [x] **Add Vertical Offset to Pixelburn & Jitter to Nav Bar**
+    - [x] **Optimize Scroll Delay (0.5s transition / 600ms lock)**
+    - [x] **Optimize Keyboard Latency (500ms lock + preventDefault)**
+    - [x] ~~Add Scroll Snapping~~ (Reverted)
+    - [x] Add Full Page "Scroll Jacking"
+    - [x] Fix Home Section Visibility on Load
+    - [x] Refine Scroll Sensitivity (Touchpad Inertia)
+    - [x] Add Glitch to Section Headings & Active Nav
+    - [x] **Fix Decipher Animation Layout Shift (Dimensions Locked & Respected Display)**
+    - [x] **Enforce Fixed Aspect Ratio for Education Boxes (4:3)**
+    - [x] ~~Add Red/Blue Glitch for Hero Title~~ (Upgraded to Advanced Layers)
+    - [x] **Implement Advanced Layered Glitch Effect**
+- [x] Verification
+    - [x] Check responsiveness on different viewports
+    - [x] **Fix Mobile Responsiveness (Font Sizes, Nav Stacking, Vertical Timeline)**
+    - [x] **Refine Mobile Timeline Layout (Left-aligned Line/Dots)**
+    - [x] **Fix Section Heading Horizontal Cut-off**
+    - [x] **Fix Mobile Scroll (Enable Native Scroll, Disable JS Jacking)**
+    - [x] **Implement Mobile Decipher-on-Scroll (IntersectionObserver)**
+    - [x] **Add Subte Neon Matrix Rain Background (Canvas + Blurs + Glitch)**
+    - [x] **Fix Mobile Heading Glitch (Converted to Responsive Clip-Path)**
+    - [x] **Implement Advanced Multi-Layer Glitch for Section Headings**
+    - [x] **Shift Contact Section Down (Added Padding)**
+    - [x] **Unchain Pixelburn Animation (Free 2D XY Offsets)**
+    - [x] **Fill Home Page Blank Space with Dynamic Holographic Radar Animation**
+    - [x] **Replace Radar with "System Breach" Terminal Simulation**
+    - [x] **Refine Hacker Animation (Static Window + Decipher Text Effect)**
+    - [x] **Add "Tubelight" CRT Turn-off Effect to System Breach Screen**
+    - [x] **Implement Permanent "Chaos Scroll" Aftermath (Red Random Text)**
+    - [x] **Fix Contact Heading Cut-off (Disable Glitch During Decipher)**
+    - [x] **Fix Decipher Vertical Clipping (Relax Height/Overflow)**
+    - [x] **Fix Decipher Layout Shift (Restore Fixed Height + Visible Overflow)**
+    - [x] **Shift Hacker Terminal Position (Right Offset)**
